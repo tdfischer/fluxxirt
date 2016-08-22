@@ -1,3 +1,5 @@
+#pragma once
+
 class InputEvent {
 public:
     enum Source {
