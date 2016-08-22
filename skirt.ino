@@ -104,7 +104,7 @@ constexpr uint8_t rowCount = sizeof(rows) / sizeof(PixelRow);
 Display<rowCount> dpy(rows, leds);
 
 void setup() {
-  FastLED.addLeds<WS2812B, 13, GRB>(leds, LED_NUM);
+  FastLED.addLeds<WS2812B, 3, GRB>(leds, LED_NUM);
   for (int i = 0; i < LED_NUM; i++) {
     leds[i] = CRGB(0, 0, 0);
   }
